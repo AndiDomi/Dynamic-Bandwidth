@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190116 16:48:35.887" generator="Robot 3.0.4 (Python 2.7.15rc1 on linux2)">
+<suite source="/home/abo/ROBOT/Band" id="s1" name="Band">
+<suite source="/home/abo/ROBOT/Band/Main.robot" id="s1-s1" name="Main">
+<test id="s1-s1-t1" name="Bandwidth automation run">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http:192.168.0.1</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190116 16:48:36.072" level="INFO">Opening browser 'chrome' to base url 'http:192.168.0.1'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190116 16:48:45.011" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 4.15.0-42-generic x86_64)
+</msg>
+<status status="FAIL" endtime="20190116 16:48:45.012" starttime="20190116 16:48:44.991"></status>
+</kw>
+<msg timestamp="20190116 16:48:45.013" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 4.15.0-42-generic x86_64)
+</msg>
+<msg timestamp="20190116 16:48:45.014" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 4.15.0-42-generic x86_64)
+</msg>
+<status status="FAIL" endtime="20190116 16:48:45.014" starttime="20190116 16:48:36.071"></status>
+</kw>
+<status status="FAIL" endtime="20190116 16:48:45.015" critical="yes" starttime="20190116 16:48:36.070">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 4.15.0-42-generic x86_64)
+</status>
+</test>
+<status status="FAIL" endtime="20190116 16:48:45.017" starttime="20190116 16:48:35.922"></status>
+</suite>
+<status status="FAIL" endtime="20190116 16:48:45.020" starttime="20190116 16:48:35.904"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Band" pass="0">Band</stat>
+<stat fail="1" id="s1-s1" name="Main" pass="0">Band.Main</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190116 16:48:45.013" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 4.15.0-42-generic x86_64)
+</msg>
+</errors>
+</robot>
